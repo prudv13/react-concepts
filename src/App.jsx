@@ -1,11 +1,13 @@
 import './App.css'
-import UseEffect01 from './useEffect/UseEffect01'
+import Fakestore from './useEffect-API/Fakestore'
+//import UseEffect01 from './useEffect/UseEffect01'
 
 function App() {
 
   return (
     <div>
-      <UseEffect01 />
+      {/*<UseEffect01 /> */}
+      <Fakestore />
     </div>
   )
 }
