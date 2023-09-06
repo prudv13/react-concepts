@@ -11,6 +11,7 @@ const Navbar = () => {
             <div className='d-flex gap-4'>
                 <p><Link to='/about'>About</Link></p>
                 <p><Link to='/contact'>Contact</Link></p>
+                <p><Link to='/user'>User</Link></p>
             </div>
         </nav>
     </div>

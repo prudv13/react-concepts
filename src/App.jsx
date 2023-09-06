@@ -6,6 +6,9 @@ import Home from './routing/Home'
 import About from './routing/About'
 import Contact from './routing/Contact'
 import Navbar from './routing/Navbar'
+import User from './routing/User'
+import Orders from './routing/Orders'
+import Profile from './routing/Profile'
 
 function App() {
 
@@ -18,8 +21,12 @@ function App() {
 
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='about' element={<About />} />
+        <Route path='contact' element={<Contact />} />
+        <Route path='user' element={<User />} >
+          <Route path='orders' element={<Orders />} />
+          <Route path='profile' element={<Profile />} />
+        </Route>
       </Routes>
     </div>
   )
