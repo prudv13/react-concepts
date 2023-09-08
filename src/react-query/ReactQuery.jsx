@@ -1,5 +1,6 @@
 import React from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
 import { Link, Outlet } from 'react-router-dom';
 
 const queryClient = new QueryClient();
@@ -16,6 +17,7 @@ const ReactQuery = () => {
           <Outlet />
         </div>
       </div>
+      <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
     </QueryClientProvider>
   )
 }
