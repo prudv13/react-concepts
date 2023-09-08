@@ -3,12 +3,16 @@ import React from 'react'
 import { useQuery } from 'react-query';
 
 const RQSuperHeroes = () => {
-    const {isLoading, data} = useQuery('super-heroes', () => {
+    const {isLoading, data, isError, error} = useQuery('super-heroes', () => {
         return axios.get("http://localhost:4000/superheroes")
     });
 
     if(isLoading){
         return <h2 className='my-3'>Loading...</h2>
+    }
+
+    if(isError){
+        return <h2 className='my-3 text-danger'>{error.message}</h2>
     }
 
   return (
