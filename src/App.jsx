@@ -10,6 +10,7 @@ import User from './routing/User'
 import Orders from './routing/Orders'
 import Profile from './routing/Profile'
 import ContextApi from './context-api/ContextApi'
+import Timer from './useRef/Timer'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />}>
           <Route path='contextapi' element={<ContextApi />} />
+          <Route path='useref' element={<Timer />} />
         </Route>
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />

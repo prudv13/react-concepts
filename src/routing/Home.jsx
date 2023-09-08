@@ -9,6 +9,9 @@ const Home = () => {
           <Link to="contextapi">
             <button className='btn btn-outline-dark'>Context Api</button>
           </Link>
+          <Link to="useref">
+            <button className='btn btn-outline-dark'>useRef</button>
+          </Link>
         </div>
         <Outlet />
     </div>
