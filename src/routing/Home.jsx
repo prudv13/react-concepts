@@ -12,6 +12,9 @@ const Home = () => {
           <Link to="useref">
             <button className='btn btn-outline-dark'>useRef</button>
           </Link>
+          <Link to="customhooks">
+            <button className='btn btn-outline-dark'>custom hooks</button>
+          </Link>
         </div>
         <Outlet />
     </div>

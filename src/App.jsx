@@ -11,6 +11,7 @@ import Orders from './routing/Orders'
 import Profile from './routing/Profile'
 import ContextApi from './context-api/ContextApi'
 import Timer from './useRef/Timer'
+import ShowHide from './custom-hooks/ShowHide'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route exact path='/' element={<Home />}>
           <Route path='contextapi' element={<ContextApi />} />
           <Route path='useref' element={<Timer />} />
+          <Route path='customhooks' element={<ShowHide />} />
         </Route>
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
