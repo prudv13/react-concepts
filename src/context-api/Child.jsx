@@ -1,10 +1,10 @@
 import React from 'react'
 import GrandChild from './GrandChild';
 
-const Child = ({setUserName}) => {
+const Child = () => {
   return (
     <div>
-        <GrandChild setUserName={setUserName} />
+        <GrandChild />
     </div>
   )
 }

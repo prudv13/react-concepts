@@ -1,11 +1,11 @@
 import React from 'react'
 import Child from './Child';
 
-const Parent = ({userName, setUserName}) => {
+const Parent = () => {
   return (
     <div>
-    <h1>Username: {userName}</h1>
-        <Child setUserName={setUserName} />
+        <h1>Username</h1>
+        <Child />
     </div>
   )
 }

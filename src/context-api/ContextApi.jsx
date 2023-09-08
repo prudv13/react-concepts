@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import Parent from './Parent';
+import AppContext from './context/AppContext';
 
 const ContextApi = () => {
     const [userName, setUserName] = useState("Dave");
   return (
-    <div>
-        <Parent userName={userName} setUserName={setUserName} />
-    </div>
+    <AppContext.Provider value={{userName, setUserName}}>
+        <div>
+            <Parent />
+        </div>
+    </AppContext.Provider>
   )
 }
 

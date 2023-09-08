@@ -1,9 +1,9 @@
 import React from 'react'
 
-const GrandChild = ({setUserName}) => {
+const GrandChild = () => {
   return (
     <div>
-        <button className='btn btn-dark' onClick={() => setUserName("Pedro")}>
+        <button className='btn btn-dark' onClick={() => null}>
             change username
         </button>
     </div>
