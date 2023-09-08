@@ -12,6 +12,9 @@ import Profile from './routing/Profile'
 import ContextApi from './context-api/ContextApi'
 import Timer from './useRef/Timer'
 import ShowHide from './custom-hooks/ShowHide'
+import ReactQuery from './react-query/ReactQuery'
+import SuperHeroes from './react-query/SuperHeroes'
+import RQSuperHeroes from './react-query/RQSuperHeroes'
 
 function App() {
 
@@ -27,6 +30,10 @@ function App() {
           <Route path='contextapi' element={<ContextApi />} />
           <Route path='useref' element={<Timer />} />
           <Route path='customhooks' element={<ShowHide />} />
+          <Route path='reactquery' element={<ReactQuery />}>
+            <Route path='superheroes' element={<SuperHeroes/>} />
+            <Route path='rqsuperheroes' element={<RQSuperHeroes />} />
+          </Route>
         </Route>
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />

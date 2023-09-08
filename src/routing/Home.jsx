@@ -15,6 +15,9 @@ const Home = () => {
           <Link to="customhooks">
             <button className='btn btn-outline-dark'>custom hooks</button>
           </Link>
+          <Link to="reactquery">
+            <button className='btn btn-outline-dark'>React Query</button>
+          </Link>
         </div>
         <Outlet />
     </div>

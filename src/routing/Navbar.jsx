@@ -6,12 +6,12 @@ const Navbar = () => {
     <div>
         <nav className='d-flex justify-content-between p-2'>
             <div>
-                <p><Link to='/'>Home</Link></p>
+                <Link to='/'><button className='btn'>Home</button></Link>
             </div>
-            <div className='d-flex gap-4'>
-                <p><Link to='/about'>About</Link></p>
-                <p><Link to='/contact'>Contact</Link></p>
-                <p><Link to='/user'>User</Link></p>
+            <div className='d-flex gap-1'>
+                <Link to='/about'><button className='btn'>About</button></Link>
+                <Link to='/contact'><button className='btn'>Contact</button></Link>
+                <Link to='/user'><button className='btn'>User</button></Link>
             </div>
         </nav>
     </div>
