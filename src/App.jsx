@@ -9,6 +9,7 @@ import Navbar from './routing/Navbar'
 import User from './routing/User'
 import Orders from './routing/Orders'
 import Profile from './routing/Profile'
+import ContextApi from './context-api/ContextApi'
 
 function App() {
 
@@ -20,7 +21,9 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/' element={<Home />}>
+          <Route path='contextapi' element={<ContextApi />} />
+        </Route>
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
         <Route path='user' element={<User />} >
