@@ -1,7 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-//import UseEffect01 from './useEffect/UseEffect01'
-//import Fakestore from './useEffect-API/Fakestore'
 import Home from './routing/Home'
 import About from './routing/About'
 import Contact from './routing/Contact'
@@ -10,7 +8,6 @@ import User from './routing/User'
 import Orders from './routing/Orders'
 import Profile from './routing/Profile'
 import ContextApi from './context-api/ContextApi'
-import Timer from './useRef/Timer'
 import ShowHide from './custom-hooks/ShowHide'
 import ReactQuery from './react-query/ReactQuery'
 import SuperHeroes from './react-query/SuperHeroes'
@@ -18,6 +15,7 @@ import RQSuperHeroes from './react-query/RQSuperHeroes'
 import UseState from './useState/UseState'
 import UseReducer from './useReducer/UseReducer'
 import UseEffect02 from './useEffect/UseEffect02'
+import UseRef from './useRef/UseRef'
 
 function App() {
 
@@ -34,7 +32,7 @@ function App() {
           <Route path='useeffect' element={<UseEffect02 />} />
           <Route path='usereducer' element={<UseReducer />} />
           <Route path='contextapi' element={<ContextApi />} />
-          <Route path='useref' element={<Timer />} />
+          <Route path='useref' element={<UseRef />} />
           <Route path='customhooks' element={<ShowHide />} />
           <Route path='reactquery' element={<ReactQuery />}>
             <Route path='superheroes' element={<SuperHeroes/>} />
