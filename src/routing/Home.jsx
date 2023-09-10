@@ -15,6 +15,9 @@ const Home = () => {
           <Link to="usereducer">
             <button className='btn btn-outline-dark'>useReducer</button>
           </Link>
+          <Link to="uselayouteffect">
+            <button className='btn btn-outline-dark'>useLayoutEffect</button>
+          </Link>
           <Link to="contextapi">
             <button className='btn btn-outline-dark'>Context Api</button>
           </Link>
