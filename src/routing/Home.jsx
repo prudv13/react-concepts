@@ -21,6 +21,9 @@ const Home = () => {
           <Link to="useimperativehandle">
             <button className='btn btn-outline-dark'>useImperativeHandle</button>
           </Link>
+          <Link to="usememo">
+            <button className='btn btn-outline-dark'>useMemo</button>
+          </Link>
           <Link to="contextapi">
             <button className='btn btn-outline-dark'>Context Api</button>
           </Link>

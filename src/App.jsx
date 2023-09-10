@@ -18,6 +18,7 @@ import UseEffect02 from './useEffect/UseEffect02'
 import UseRef from './useRef/UseRef'
 import LayoutEffect from './useLayoutEffect/LayoutEffect'
 import ImperativeHandle from './useImperativeHandle/ImperativeHandle'
+import UseMemo from './useMemo/UseMemo'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path='useref' element={<UseRef />} />
           <Route path='uselayouteffect' element={<LayoutEffect />} />
           <Route path='useimperativehandle' element={<ImperativeHandle />} />
+          <Route path='usememo' element={<UseMemo />} />
           <Route path='customhooks' element={<ShowHide />} />
           <Route path='reactquery' element={<ReactQuery />}>
             <Route path='superheroes' element={<SuperHeroes/>} />
