@@ -6,6 +6,12 @@ const Home = () => {
     <div className='p-4'>
         <p className='text-center mb-4'>React Concepts</p>
         <div className='mb-5 d-flex gap-4 flex-wrap justify-content-center'>
+          <Link to="usestate">
+            <button className='btn btn-outline-dark'>useState</button>
+          </Link>
+          <Link to="usereducer">
+            <button className='btn btn-outline-dark'>useReducer</button>
+          </Link>
           <Link to="contextapi">
             <button className='btn btn-outline-dark'>Context Api</button>
           </Link>

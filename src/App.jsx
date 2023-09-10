@@ -15,6 +15,8 @@ import ShowHide from './custom-hooks/ShowHide'
 import ReactQuery from './react-query/ReactQuery'
 import SuperHeroes from './react-query/SuperHeroes'
 import RQSuperHeroes from './react-query/RQSuperHeroes'
+import UseState from './useState/UseState'
+import UseReducer from './useReducer/UseReducer'
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
 
       <Routes>
         <Route exact path='/' element={<Home />}>
+          <Route path='usestate' element={<UseState />} />
+          <Route path='usereducer' element={<UseReducer />} />
           <Route path='contextapi' element={<ContextApi />} />
           <Route path='useref' element={<Timer />} />
           <Route path='customhooks' element={<ShowHide />} />
