@@ -9,6 +9,9 @@ const Home = () => {
           <Link to="usestate">
             <button className='btn btn-outline-dark'>useState</button>
           </Link>
+          <Link to="useeffect">
+            <button className='btn btn-outline-dark'>useEffect</button>
+          </Link>
           <Link to="usereducer">
             <button className='btn btn-outline-dark'>useReducer</button>
           </Link>

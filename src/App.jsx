@@ -17,6 +17,7 @@ import SuperHeroes from './react-query/SuperHeroes'
 import RQSuperHeroes from './react-query/RQSuperHeroes'
 import UseState from './useState/UseState'
 import UseReducer from './useReducer/UseReducer'
+import UseEffect02 from './useEffect/UseEffect02'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />}>
           <Route path='usestate' element={<UseState />} />
+          <Route path='useeffect' element={<UseEffect02 />} />
           <Route path='usereducer' element={<UseReducer />} />
           <Route path='contextapi' element={<ContextApi />} />
           <Route path='useref' element={<Timer />} />
