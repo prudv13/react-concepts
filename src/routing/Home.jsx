@@ -18,6 +18,9 @@ const Home = () => {
           <Link to="uselayouteffect">
             <button className='btn btn-outline-dark'>useLayoutEffect</button>
           </Link>
+          <Link to="useimperativehandle">
+            <button className='btn btn-outline-dark'>useImperativeHandle</button>
+          </Link>
           <Link to="contextapi">
             <button className='btn btn-outline-dark'>Context Api</button>
           </Link>
